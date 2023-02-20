@@ -11,7 +11,9 @@ function useSearch () {
 
   useEffect(() => {
     if (isFirstInput.current) {
-      isFirstInput.current = search === '' // Se iguala al resultado de la comparación es search === '' ? true or false
+      isFirstInput.current = search === ''
+      // Se iguala al resultado a la comparación:  es search === '' ? true or false
+      // Es true hasta que se realiza la primera busqueda != de ''
       return
     }
 
