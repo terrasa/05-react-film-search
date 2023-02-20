@@ -1,0 +1,38 @@
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+}
+
+#root{
+  display: flex;
+  place-content: center;
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #213547;
+  color: #fff;
+}
+
+
+button {
+  border-radius: 6px;
+  border: 1px solid transparent;
+  padding: 0.6em 1em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1ab3e2;
+  color: #fff;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  height: 39.19px;
+}
+button:hover {
+  border-color: #646cff;
+  background-color: #646cff;
+}
+
+
+
+
