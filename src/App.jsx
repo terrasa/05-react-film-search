@@ -11,8 +11,7 @@ function useSearch () {
 
   useEffect(() => {
     if (isFirstInput.current) {
-      isFirstInput.current = search === '' // revisar
-
+      isFirstInput.current = search === '' // Se iguala al resultado de la comparación es search === '' ? true or false
       return
     }
 
@@ -41,7 +40,6 @@ function App () {
 
   const debouncedGetMovies = useCallback(
     debounce(search => {
-      console.log('sippp2 ', search, { search })
       getMovies({ search })
     }, 300)
     , [getMovies]
@@ -52,7 +50,6 @@ function App () {
     // const resultsForm = Object.fromEntries(new window.FormData(event.target)) // .get('query-search2')
     // console.log(resultsForm.querySearch)
     getMovies({ search })
-    isFirstInput.current = false
   }
 
   const handleChangeSearch = (event) => {
