@@ -92,8 +92,9 @@ function App () {
           </form>
         </header>
         <main className='list-movies'>
-          {loading && <h1>Cargando....</h1>}
-          {isFirstInput.current ? <h3>Inicia una busqueda...</h3> : <ListMovies responseFetch={movies} />}
+          {loading
+            ? <h1>Cargando....</h1>
+            : isFirstInput.current ? <h3>Inicia una busqueda...</h3> : <ListMovies responseFetch={movies} />}
 
         </main>
       </div>
